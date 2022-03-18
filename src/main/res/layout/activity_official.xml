@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainedLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.v1.civiladvocacy.OfficialActivity">
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/location_bg"
+        android:elevation="4dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Chicago, IL, 60654" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context="com.v1.civiladvocacy.OfficialActivity"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="-164dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/details_bg"
+                android:elevation="4dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logo">
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/email2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/email2"
+                    app:layout_constraintTop_toTopOf="@+id/email2"
+                    tools:text="hmammado@depaul.edu" />
+
+                <TextView
+                    android:id="@+id/website"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/website2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/website2"
+                    app:layout_constraintTop_toTopOf="@+id/website2"
+                    tools:text="https://www.linkedin.com/in/huseyn-mammadov-8121031b5/" />
+
+                <TextView
+                    android:id="@+id/number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/office" />
+
+                <TextView
+                    android:id="@+id/website2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableStart="@drawable/ic_link"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/email2" />
+
+                <TextView
+                    android:id="@+id/office"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textIsSelectable="false"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/office2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="600 N Dearborn St #216, Chicago, 60654," />
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/number2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/number2"
+                    app:layout_constraintTop_toTopOf="@+id/number2"
+                    tools:text="2023907797" />
+
+                <TextView
+                    android:id="@+id/email2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableStart="@drawable/ic_email"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/number2" />
+
+                <TextView
+                    android:id="@+id/office2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_home"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/office"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/office" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="U.S. Senator" />
+
+            <TextView
+                android:id="@+id/identity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/position"
+                tools:text="Huseyn Mammadov" />
+
+            <TextView
+                android:id="@+id/side"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/identity"
+                tools:text="(Democratic Party)" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/verticalLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.15" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/verticalRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.85" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.6019152" />
+
+            <ImageView
+                android:id="@+id/font"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/dp_background"
+                android:clickable="true"
+                android:contentDescription="Main_Image"
+                android:cropToPadding="true"
+                android:elevation="4dp"
+                android:onClick="zoomImage"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/guideline9"
+                app:layout_constraintEnd_toStartOf="@+id/verticalRight"
+                app:layout_constraintStart_toStartOf="@+id/verticalLeft"
+                app:layout_constraintTop_toBottomOf="@+id/side"
+                app:srcCompat="@drawable/missing" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:background="@drawable/side_background"
+                android:contentDescription="logo"
+                android:elevation="6dp"
+                android:onClick="clickLogo"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toStartOf="@+id/verticalRight"
+                app:layout_constraintStart_toStartOf="@+id/verticalLeft"
+                app:layout_constraintTop_toTopOf="@+id/guideline7"
+                app:srcCompat="@drawable/dem_logo" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5294118" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/social_bg"
+                android:clickable="true"
+                android:contentDescription="Twitter"
+                android:onClick="clickTwitter"
+                android:padding="10dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content"
+                app:srcCompat="@drawable/twitter" />
+
+            <ImageView
+                android:id="@+id/youtube"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/social_bg"
+                android:clickable="true"
+                android:contentDescription="Youtube"
+                android:onClick="clickYoutube"
+                android:padding="5dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content"
+                app:srcCompat="@drawable/youtube"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/main"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/social_bg"
+                android:clickable="true"
+                android:contentDescription="Google"
+                android:onClick="clickGoogle"
+                android:padding="2dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/youtube"
+                app:layout_constraintTop_toBottomOf="@+id/content"
+                app:srcCompat="@drawable/google" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

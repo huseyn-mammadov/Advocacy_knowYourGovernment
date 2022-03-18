@@ -1,0 +1,2 @@
+rootProject.name='Civil Advocacy App'
+include ':app'
